@@ -1,0 +1,70 @@
+body {
+	background-color: #f0f0f0;
+}
+.main {
+	background-color: #f0f0f0;
+}
+:root {
+	--color-accent: #cc0000;
+	--color-secondary: #202024;
+	--text-secondary: white;
+	--nav-color: white;
+	--nav-text: #404040;
+	--nav-text-hover: black;
+	--max-width: 1000px;
+	--text-basis: 18px;
+	--full-padding: calc(100vw - var(--max-width));
+	--side-padding: calc(var(--full-padding)/2);
+	--base-center: calc(var(--max-width)/2);
+	--center: calc(var(--base-center) + var(--side-padding));
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400 !important;
+	font-family: 'Luckiest Guy';
+	text-transform: uppercase;
+	line-height: 1;
+	color: #cc0000;
+}
+* p {
+	font-size: 20px;
+}
+.cardbanner {
+	background-color: #202024;
+	background-image: url('images/banner.png');
+	background-size: 275px;
+	background-repeat: no-repeat;
+	background-position: calc(var(--side-padding) + calc(calc(var(--max-width) *2) / 3)) bottom;
+	border-bottom: 1px solid #d0d0d0;
+	color: white;
+}
+.cardbanner h1 {
+	color: white;
+}
+.domFont {
+	font-family: 'Luckiest Guy', sans-serif;
+}
+.domGradient {
+	background: linear-gradient(#cc0000 40%, #660000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.domWhite {
+	font-family: 'Luckiest Guy', sans-serif;
+	color: white;
+	font-weight: 400;
+}
+.domBG {
+	background: linear-gradient(#cc0000 40%, #aa0000);
+}
+.footer-logo {
+	height: 155px;
+}
+@media screen and (max-width: 700px) {
+	.cardbanner {
+		background-size: 150px;
+		background-position: calc(100% - 10px) bottom;
+	}
+	.footer-logo {
+		height: 125px;
+	}
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Domaniacal - The Cuththroat Domino Card Game</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HunterBall/Fresh@1.1.1/fresh.css">
+		<!--<link rel="stylesheet" type="text/css" href="fresh.css">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "icon" type = "image/png" href = "images/icon.png">
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+	<body>
+		<div class = "nav top dark">
+			<a href = "index.html"><img class = "icon" style = "padding: 2px 0; height: 44px;" src = "images/LogoType.png"/></a>
+			<a class = "item" href = "index.html">Home</a>
+			<a class = "item" href = "index.html#rules">How to Play</a>
+			<a class = "item" href = "index.html#buy">Get the Game</a>
+			<a class = "item active" href = "about.html">About Us</a>
+		</div>
+		<div class = "nav mobile">
+			<a class = "nav-trigger" style = "vertical-align: middle">&#9776;</a>
+			<a style = "padding: 0; margin: 0;" href = "index.html"><img style = "vertical-align: middle; margin: 0; height: 47px; padding: 0; padding-left: calc(calc(100% - 115px)/2)" src = "images/LogoType.png"/></a>
+		</div>
+		<div class = "nav side mobile-only nav-top">
+			<a class = "item" href = "index.html"><img class = "full" src = "images/LogoType.png"></a>
+			<a class = "item" href = "index.html">Home</a>
+			<a class = "item" href = "index.html#rules">How to Play</a>
+			<a class = "item" href = "index.html#buy">Get the Game</a>
+			<a class = "item" href = "about.html">About Us</a>
+		</div>
+		<div class = "main nav-top">
+			<div class = "header secondary shadow">
+				<h1 class = "text-secondary" style = "font-size: 4rem">About Us</h1>
+			</div>
+			<div class = "container">
+				<p>Domaniacal was first conceived in July of 2019. The original idea for the game was, quite literally, "Go Fish with Dominoes". You may think that is a terrible idea, and it was, but it was an idea nonetheless. Over the course of half a year, we have revised, changed, and fixed the game to become the cutthroat card game it is today.</p>
+				<p>Special thanks to Noah Roppe, Laine Slinglend, and many others who constantly dealt with awful ideas, poor concepts, and hours of constant playtesting in order to make the game what it is. This game has, in many ways, taken over our lives at times, and we could not thank you enough for your efforts.</p>
+				<p>Most importantly, we’d like to thank you all for supporting Domaniacal through this journey. Our goal is to create fun games that entertain people in new and unique ways, and Domaniacal is the test pilot for us. We hope you enjoy it and the many other games we have awaiting to be created, and continue to support us and our efforts!</p>
+				<p> <em> -The Domaniacal Team</em></p>
+				<div class = "spacer large"></div>
+			</div>
+			<div class = "footer">
+				<div class = "column double">
+					<div class = "left">
+						<img src = "images/Logo.png" class = "footer-logo">
+					</div>
+					<div class = "left">
+						<div class = "spacer small no-mobile"></div>
+						<a class = "item" href = "index.html" style = "margin-left: 25px">Home</a>
+						<a class = "item" href = "about.html" style = "margin-left: 15px">About Us</a>
+						<a class = "item" href = "index.html#buy" style = "margin-left: 8px">Get The Game</a>
+						<a class = "item" href = "index.html#rules" style = "margin-left: 0">How to Play</a>
+						<div class = "spacer small no-mobile"></div>
+					</div>
+					<div class = "clear"></div>
+				</div>
+				<div class = "column no-mobile">
+					<div class = "spacer"></div>
+					<div>
+						<h1 style = "color: black;">Stay in The Know</h1>
+						<form id = "newsletterform" target = "hidden_iframe3" action = "https://docs.google.com/forms/d/e/1FAIpQLSee6JGOI8HDcLznPYx9tHUbL1I78-ZZyEHD9ROc2qq62huZlA/formResponse?">
+							<div class = "columns">
+								<input class = "email column double" style = "width: auto; margin: 0 1% 0 0; box-sizing: border-box; display: inline-block;" type="email" name="entry.1202751675" id="newsletterEmail" placeholder = "Enter Email" />
+								<input value = "Submit" style = "margin: 0; box-sizing: border-box; display: inline-block;" class = "button small column" type = "submit"/>
+							</div>
+						</form>
+					</div>
+					<iframe name="hidden_iframe3" id="hidden_iframe3" style="display:none;" onload="if(submitted) {}"></iframe>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/HunterBall/Fresh@1.1.1/fresh.js"></script>
+		<script type="text/javascript">var submitted=false;</script>
+		<script type="text/javascript">
+		$('#newsletterform').on('submit', function(e) {
+			$('#newsletterform .email').val('');
+		});
+		</script>
+	</body>
+</html>
