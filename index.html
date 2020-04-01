@@ -90,9 +90,9 @@
 					<div class = "column">
 						<h1>Where can I get DOMANIACAL?</h1>
 						<p>Domaniacal is still in pre-production, but you can join our mailing list to be notified when you can get the game! <em class = "text-small">(We promise we won't spam you)</em></p>
-						<form id = "paymentform" style = "margin-top: 10px" target = "hidden_iframe2" action = "https://docs.google.com/forms/d/e/1FAIpQLSee6JGOI8HDcLznPYx9tHUbL1I78-ZZyEHD9ROc2qq62huZlA/formResponse?">
+						<form id = "paymentform" style = "margin-top: 10px" target = "hidden_iframe2" action = "https://formspree.io/maydwdlw" method="POST">
 							<div class = "columns">
-								<input class = "email column double" style = "margin-right: 5px; top: 5px; position:relative; box-sizing: border-box; display: inline-block;" type="email" name="entry.1202751675" id="newsletterEmail2" placeholder = "Enter Email"/>
+								<input class = "email column double" style = "margin-right: 5px; top: 5px; position:relative; box-sizing: border-box; display: inline-block;" type="email" name="email" id="newsletterEmail2" placeholder = "Enter Email"/>
 								<div class = "column mobile-only"></div>
 								<input value = "Submit" style = "margin-left: 0; margin-right: 5px; box-sizing: border-box; display: inline-block;" class = "button small column" type = "submit"/>
 							</div>
@@ -106,13 +106,13 @@
 				<div class = "spacer large"></div>
 				<h1>Contact Us</h1>
 				<p>Love the game? Want us to produce a waterproof version of Domaniacal? (We seem to get that one pretty often) Don't hesitate to contact us at <a href = "mailto:domaniacal@gmail.com">Domaniacal@gmail.com</a>, or use our handy form to reach out!</p>
-				<form id = "contactform" target = "hidden_iframe" style = "margin-top: 8px" action = "https://docs.google.com/forms/d/e/1FAIpQLSc6g5zypmwEWMZasEifG5ODP6ZgIZHRJykZq-DTMdz6NspxbQ/formResponse?">
+				<form id = "contactform" target = "hidden_iframe" style = "margin-top: 8px" action = "https://formspree.io/meqljlrz" method="POST">
 					<div class = "columns">
-						<input class = "column" type="text" name="entry.1092972790" id="contactName" placeholder="Your Name"/>
-						<input class = "column" type="email" name="entry.761702681" id="contactEmail" placeholder="Your Email"/>
+						<input class = "column" type="text" name="name" id="contactName" placeholder="Your Name"/>
+						<input class = "column" type="email" name="email" id="contactEmail" placeholder="Your Email"/>
 						<div class = "column mobile-only"></div>
 					</div>
-					<textarea placeholder = "Your Message" id = "contactMessage" name = "entry.27880706"></textarea>
+					<textarea placeholder = "Your Message" id = "contactMessage" name = "message"></textarea>
 					<input type = "submit" value = "Submit" class = "button small"/>
 				</form>
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -139,9 +139,9 @@
 					<div class = "spacer"></div>
 					<div>
 						<h1 style = "color: black;">Stay in The Know</h1>
-						<form id = "newsletterform" target = "hidden_iframe3" action = "https://docs.google.com/forms/d/e/1FAIpQLSee6JGOI8HDcLznPYx9tHUbL1I78-ZZyEHD9ROc2qq62huZlA/formResponse?">
+						<form id = "newsletterform" target = "hidden_iframe3" action = "https://formspree.io/maydwdlw" method = "POST">
 							<div class = "columns">
-								<input class = "email column double" style = "margin-right: 5px; position: relative; top: 5px; box-sizing: border-box; display: inline-block;" type="email" name="entry.1202751675" id="newsletterEmail" placeholder = "Enter Email" />
+								<input class = "email column double" style = "margin-right: 5px; position: relative; top: 5px; box-sizing: border-box; display: inline-block;" type="email" name="email" id="newsletterEmail" placeholder = "Enter Email" />
 								<input value = "Submit" style = "margin-left: 0; margin-right: 5px; box-sizing: border-box; display: inline-block;" class = "button small column" type = "submit"/>
 							</div>
 						</form>
@@ -156,9 +156,6 @@
 		$('#contactform').on('submit', function(e) {
 		  $('#contactform *').fadeOut(500);
 		  $('#contactform').prepend('<p><em>Your submission has been processed...</em></p>');
-		});
-		$('#newsletterform, #paymentform').on('submit', function(e) {
-			$('#newsletterform .email, #paymentform .email').val('');
 		});
 		</script>
 		<!--<script src = "fresh.js"></script>-->
