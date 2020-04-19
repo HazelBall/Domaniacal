@@ -25,9 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	color: #cc0000;
 }
-* p {
-	font-size: 20px;
-}
 .cardbanner {
 	background-color: #202024;
 	background-image: url('images/banner.png');
@@ -58,6 +55,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-logo {
 	height: 155px;
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 @media screen and (max-width: 700px) {
 	.cardbanner {
