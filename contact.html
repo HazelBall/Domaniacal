@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact Us | Domaniacal - The Cuththroat Domino Card Game</title>
+		<meta name="keywords" content="Kickstarter, Domaniacal, Domino, Board Game">
+		<meta name = "description" content = "Steal from friends, strategize against your enemies, and play as many cards as possible to win! Now available for pre-order.">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HunterBall/Fresh@1.1.1/fresh.css">
+		<!--<link rel="stylesheet" type="text/css" href="fresh.css">-->
+		<link rel = "icon" type = "image/png" href = "images/favicon.png">
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+	<body>
+		<div class = "nav top dark">
+			<a href = "index.html"><img class = "icon" style = "padding: 2px 0; height: 44px;" src = "images/LogoType.png"/></a>
+			<a class = "item" href = "index.html">Home</a>
+			<a class = "item" href = "about.html">About</a>
+			<!--<a class = "item" href = "shop/index.html">Products</a>-->
+			<a class = "item active" href = "contact.html">Contact</a>
+		</div>
+		<div class = "nav mobile" style = "width: 100vw; box-sizing: border-box">
+			<a class = "nav-trigger" style = "vertical-align: middle">&#9776;</a>
+			<a style = "padding: 0; margin: 0;" href = "index.html"><img style = "vertical-align: middle; margin: 0; height: 47px; padding: 0; padding-left: calc(calc(100% - 115px)/2)" src = "images/LogoType.png"/></a>
+		</div>
+		<div class = "nav side mobile-only nav-top">
+			<a class = "item" href = "index.html"><img class = "full" src = "images/LogoType.png"></a>
+			<a class = "item" href = "index.html">Home</a>
+			<a class = "item" href = "about.html">About</a>
+			<!--<a class = "item" href = "shop/index.html">Products</a>-->
+			<a class = "item active" href = "contact.html">Contact</a>
+		</div>
+		<div class = "main nav-top">
+			<div class = "header secondary shadow">
+				<h1 class = "text-secondary" style = "font-size: 4rem">Contact Us</h1>
+			</div>
+			<div class = "container">
+				<div class = "spacer small"></div>
+				<p>Love the game? Have some ideas or suggestions? Want us to produce a waterproof version of Domaniacal? (We seem to get that one pretty often) Don't hesitate to contact us at <a href = "mailto:domaniacal@gmail.com">Domaniacal@gmail.com</a>, or use our handy form below to reach out!</p>
+				<div class = "spacer small"></div>
+				<h3>Contact Form</h3>
+				<form id = "contactform" target = "hidden_iframe" style = "margin-top: 8px" action = "https://formspree.io/meqljlrz" method="POST">
+					<div class = "columns">
+						<input class = "column" type="text" name="name" id="contactName" placeholder="Your Name"/>
+						<input class = "column" type="email" name="email" id="contactEmail" placeholder="Your Email"/>
+						<div class = "column mobile-only"></div>
+					</div>
+					<textarea placeholder = "Your Message" id = "contactMessage" name = "message"></textarea>
+					<input type = "submit" value = "Submit" class = "button small domBG"/>
+				</form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+				<iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(submitted) {}"></iframe>
+				<div class = "spacer large"></div>
+			</div>
+			<div class = "footer">
+				<div class = "column double">
+					<div class = "left">
+						<img src = "images/Logo.png" class = "footer-logo">
+					</div>
+					<div class = "left">
+						<div class = "spacer small no-mobile"></div>
+						<a class = "item" href = "index.html" style = "margin-left: 25px">Home</a>
+						<a class = "item" href = "about.html" style = "margin-left: 15px">About</a>
+						<!--<a class = "item" href = "shop/index.html" style = "margin-left: 8px">Products</a>-->
+						<a class = "item" href = "contact.html" style = "margin-left: 0">Contact</a>
+						<div class = "spacer small no-mobile"></div>
+					</div>
+					<div class = "clear"></div>
+				</div>
+				<div class = "column no-mobile">
+					<div class = "spacer"></div>
+					<div>
+						<h1 style = "color: black;">Stay in The Know</h1>
+						<form id = "newsletterform" target = "hidden_iframe2" action = "https://formspree.io/maydwdlw" method = "POST">
+							<div class = "columns">
+								<input class = "email column double" style = "margin-right: 5px; position: relative; top: 5px; box-sizing: border-box; display: inline-block;" type="email" name="email" id="newsletterEmail" placeholder = "Enter Email" />
+								<input value = "Submit" style = "margin-left: 0; margin-right: 5px; box-sizing: border-box; display: inline-block;" class = "button small column" type = "submit"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/HunterBall/Fresh@1.1.1/fresh.js"></script>
+		<script type="text/javascript">var submitted=false;</script>
+		<script type="text/javascript">
+		$('#contactform').on('submit', function(e) {
+		  $('#contactform *').fadeOut(500);
+		  $('#contactform').prepend('<p><em>Thank you! Your submission has been processed...</em></p>');
+		});
+		$('#newsletterform').on('submit', function(e) {
+			$('#newsletterform .email').val('');
+		});
+		</script>
+	</body>
+</html>
