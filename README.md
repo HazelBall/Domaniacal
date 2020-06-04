@@ -1,2 +1,0 @@
-# Domaniacal
-Domaniacal Static Website
