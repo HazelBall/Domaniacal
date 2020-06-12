@@ -18,6 +18,12 @@ body {
 	--base-center: calc(var(--max-width)/2);
 	--center: calc(var(--base-center) + var(--side-padding));
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: white;
+    --text-primary: black;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400 !important;
 	font-family: 'Luckiest Guy';
@@ -39,11 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .domFont {
 	font-family: 'Luckiest Guy', sans-serif;
-}
-.domGradient {
-	background: linear-gradient(#cc0000 40%, #660000);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 .domWhite {
 	font-family: 'Luckiest Guy', sans-serif;
