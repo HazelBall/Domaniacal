@@ -36,21 +36,9 @@
 				<h1 class = "text-secondary" style = "font-size: 4rem">Contact Us</h1>
 			</div>
 			<div class = "container">
-				<div class = "spacer small"></div>
-				<p>Love the game? Have some ideas or suggestions? Want us to produce a waterproof version of Domaniacal? (We seem to get that one pretty often) Don't hesitate to contact us at <a href = "mailto:domaniacal@gmail.com">Domaniacal@gmail.com</a>, or use our handy form below to reach out!</p>
-				<div class = "spacer small"></div>
-				<h3>Contact Form</h3>
-				<form id = "contactform" target = "hidden_iframe" style = "margin-top: 8px" action = "https://formspree.io/meqljlrz" method="POST">
-					<div class = "columns">
-						<input class = "column" type="text" name="name" id="contactName" placeholder="Your Name"/>
-						<input class = "column" type="email" name="email" id="contactEmail" placeholder="Your Email"/>
-						<div class = "column mobile-only"></div>
-					</div>
-					<textarea placeholder = "Your Message" id = "contactMessage" name = "message"></textarea>
-					<input type = "submit" value = "Submit" class = "button small domBG"/>
-				</form>
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-				<iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(submitted) {}"></iframe>
+				<div class = "spacer large"></div>
+				<p class = "left two-thirds">Love the game? Have some ideas or suggestions? Want us to produce a waterproof version of Domaniacal? (We seem to get that one pretty often) Don't hesitate to contact us at <a href = "mailto:domaniacal@gmail.com">Domaniacal@gmail.com</a> to reach out!</p>
+				<div class="clear"></div>
 				<div class = "spacer large"></div>
 			</div>
 			<div class = "footer">
@@ -92,12 +80,5 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/HunterBall/Fresh@1.1.1/fresh.js"></script>
-		<script type="text/javascript">var submitted=false;</script>
-		<script type="text/javascript">
-		$('#contactform').on('submit', function(e) {
-		  $('#contactform *').fadeOut(500);
-		  $('#contactform').prepend('<p><em>Thank you! Your submission has been processed...</em></p>');
-		});
-		</script>
 	</body>
 </html>
